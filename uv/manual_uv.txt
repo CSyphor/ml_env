@@ -1,0 +1,19 @@
+:: 1. Install uv using pip (user-level)
+python -m pip install --user uv
+
+:: 2. Ensure Scripts path is available
+set PATH=%PATH%;%USERPROFILE%\AppData\Roaming\Python\Python3x\Scripts
+
+:: 3. Create project
+mkdir ml-lab
+cd ml-lab
+
+:: 4. Create & activate env
+uv venv
+.venv\Scripts\activate
+
+:: 5. Install packages
+uv pip install numpy pandas matplotlib scikit-learn jupyter
+
+:: 6. Run Jupyter
+jupyter notebook

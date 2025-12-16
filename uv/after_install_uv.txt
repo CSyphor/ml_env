@@ -1,0 +1,8 @@
+mkdir ml-lab
+cd ml-lab
+
+uv venv
+.venv\Scripts\activate
+
+uv pip install numpy pandas matplotlib scikit-learn jupyter
+jupyter notebook

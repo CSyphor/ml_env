@@ -1,0 +1,19 @@
+1. Download:
+   https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe
+
+2. Run installer
+   - Installation type: Just Me
+   - Add to PATH: Yes
+   - Register Python: No
+
+3. Open Command Prompt / Anaconda Prompt
+
+4. Create & activate env:
+   conda create -n ml-lab python=3.10
+   conda activate ml-lab
+
+5. Install packages:
+   conda install numpy pandas matplotlib scikit-learn jupyter
+
+6. Run:
+   jupyter notebook

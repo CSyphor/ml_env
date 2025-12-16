@@ -1,0 +1,48 @@
+===============================
+EXECUTING SCRIPT FILES (WINDOWS)
+===============================
+
+--------------------------------
+1) COMMAND PROMPT (.bat)
+--------------------------------
+1. Open Command Prompt
+2. Navigate to script location:
+   cd path\to\scripts
+3. Run:
+   install_conda_cmd.bat
+
+
+--------------------------------
+2) POWERSHELL (.ps1)
+--------------------------------
+Method A (recommended, one-time)
+
+1. Open PowerShell (normal user)
+2. Allow scripts for current user:
+   Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned -Force
+3. Navigate to script location:
+   cd path\to\scripts
+4. Run:
+   .\install_conda_ps.ps1
+   OR
+   .\install_uv.ps1
+
+
+Method B (no policy change)
+
+1. Open PowerShell
+2. Navigate to script location:
+   cd path\to\scripts
+3. Run:
+   powershell -ExecutionPolicy Bypass -File install_uv.ps1
+
+
+--------------------------------
+3) VERIFY INSTALL
+--------------------------------
+
+Conda:
+   conda --version
+
+uv:
+   uv --version

@@ -1,0 +1,6 @@
+:: Open Command Prompt or Anaconda Prompt
+
+conda create -n ml-lab python=3.10
+conda activate ml-lab
+conda install numpy pandas matplotlib scikit-learn jupyter
+jupyter notebook
