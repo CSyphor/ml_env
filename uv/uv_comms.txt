@@ -1,0 +1,2 @@
+powershell -ExecutionPolicy Bypass -Command `
+  "irm https://astral.sh/uv/install.ps1 | iex"
